@@ -17,7 +17,9 @@ class Journal
         {
             entry.Display();
             Console.WriteLine();
-    
+        }
+    }
+
     public void SaveToFile(string filename)
     {
         using (StreamWriter writer = new StreamWriter(filename))
@@ -32,7 +34,6 @@ class Journal
     public void LoadFromFile(string filename)
     {
         _entries.Clear();
-
         string[] lines = File.ReadAllLines(filename);
 
         foreach (string line in lines)
