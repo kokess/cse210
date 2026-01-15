@@ -17,10 +17,7 @@ class Journal
         {
             entry.Display();
             Console.WriteLine();
-        }
-    }
-
-    // ✅ METHOD EXISTS – matches Program.cs
+    
     public void SaveToFile(string filename)
     {
         using (StreamWriter writer = new StreamWriter(filename))
@@ -32,7 +29,6 @@ class Journal
         }
     }
 
-    // ✅ METHOD EXISTS – matches Program.cs
     public void LoadFromFile(string filename)
     {
         _entries.Clear();
