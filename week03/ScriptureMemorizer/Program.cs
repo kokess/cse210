@@ -1,5 +1,11 @@
 using System;
 
+/*
+EXCEEDING CORE REQUIREMENTS:
+- The program hides multiple random words (3 at a time) instead of just one.
+- The program automatically ends when all words are hidden.
+*/
+
 class Program
 {
     static void Main()
@@ -32,6 +38,7 @@ class Program
         }
     }
 }
+
 public class Reference
 {
     private string _book;
@@ -129,6 +136,7 @@ public class Scripture
         return true;
     }
 }
+
 public class Word
 {
     private string _text;
