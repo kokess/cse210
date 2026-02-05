@@ -5,7 +5,6 @@ class Program
 {
     static void Main()
     {
-        // Order 1 (USA customer)
         Address address1 = new Address(
             "123 Main Street",
             "Dallas",
@@ -23,7 +22,6 @@ class Program
 
         Order order1 = new Order(products1, customer1);
 
-        // Order 2 (International customer)
         Address address2 = new Address(
             "45 King Road",
             "Toronto",
@@ -42,14 +40,13 @@ class Program
 
         Order order2 = new Order(products2, customer2);
 
-        // Display Order 1
         Console.WriteLine("ORDER 1");
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
         Console.WriteLine($"Total Price: ${order1.GetTotalPrice():F2}");
+
         Console.WriteLine(new string('-', 40));
 
-        // Display Order 2
         Console.WriteLine("ORDER 2");
         Console.WriteLine(order2.GetPackingLabel());
         Console.WriteLine(order2.GetShippingLabel());
@@ -131,6 +128,7 @@ public class Address
     }
 }
 
+
 public class Order
 {
     private List<Product> _products;
@@ -151,7 +149,6 @@ public class Order
             total += product.GetTotalCost();
         }
 
-        // Shipping cost
         if (_customer.LivesInUSA())
         {
             total += 5;
