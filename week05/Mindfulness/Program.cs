@@ -142,9 +142,9 @@ public class BreathingActivity : Activity
         while (DateTime.Now < endTime)
         {
             Console.WriteLine("\nBreathe in...");
-            Spinner(4); // 4 seconds
+            Spinner(4); 
             Console.WriteLine("Breathe out...");
-            Spinner(6); // 6 seconds
+            Spinner(6); 
         }
     }
 }
@@ -194,7 +194,7 @@ public class ReflectionActivity : Activity
         {
             string question = _questions[_random.Next(_questions.Count)];
             Console.WriteLine(question);
-            Spinner(5); // pause with spinner
+            Spinner(5); 
         }
     }
 }
