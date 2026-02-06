@@ -5,6 +5,8 @@ class Program
 {
     static void Main()
     {
+
+
         Address address1 = new Address(
             "123 Main Street",
             "Dallas",
@@ -54,6 +56,9 @@ class Program
     }
 }
 
+
+
+
 public class Product
 {
     private string _name;
@@ -80,6 +85,9 @@ public class Product
     }
 }
 
+
+
+
 public class Customer
 {
     private string _name;
@@ -101,6 +109,10 @@ public class Customer
         return $"{_name}\n{_address.GetFullAddress()}";
     }
 }
+
+
+
+
 
 public class Address
 {
@@ -127,6 +139,9 @@ public class Address
         return $"{_street}\n{_city}, {_state}\n{_country}";
     }
 }
+
+
+
 
 
 public class Order
